@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Alex Fish | Singer · Actor · Stage Performer</title>
+  <meta name="description" content="Official portfolio of Alex Fish: singer, actor and stage performer. Watch reels and get in touch for bookings and inquiries." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <header class="nav" id="nav">
+    <a href="#home" class="logo">Alex Fish</a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span>
+    </button>
+    <nav class="nav-links" id="navLinks">
+      <a href="#about">About</a>
+      <a href="#reel">Reel</a>
+      <a href="#contact" class="btn btn-small">Inquiries</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero" id="home">
+      <div class="hero-text fade-in">
+        <p class="eyebrow">Singer &nbsp;·&nbsp; Actor &nbsp;·&nbsp; Stage Performer</p>
+        <h1>Alex <em>Fish</em></h1>
+        <p class="lead">Bringing story, voice and presence to the stage and screen.</p>
+        <div class="hero-cta">
+          <a href="#reel" class="btn">Watch the Reel</a>
+          <a href="#contact" class="btn btn-outline">Book / Inquire</a>
+        </div>
+      </div>
+      <div class="hero-photo fade-in">
+        <div class="photo-frame">
+          <img src="images/alex-profile.jpg" alt="Portrait of Alex Fish" />
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="section" id="about">
+      <div class="container narrow fade-in">
+        <p class="eyebrow">About</p>
+        <h2>Performer. Storyteller. Voice.</h2>
+        <p>
+          Alex Fish is a singer and actor with his sights set on the Broadway stage.
+          From musical theatre to screen work, he brings energy, warmth and craft to every role.
+        </p>
+        <p class="muted">
+          <!-- TODO: Replace this with Alex's real bio, training, and credits. -->
+          Add a short bio here: training, notable roles, and what makes his performance style his own.
+        </p>
+
+        <div class="facts">
+          <div><span>Vocal Type</span><strong>Add here</strong></div>
+          <div><span>Training</span><strong>Add here</strong></div>
+          <div><span>Based In</span><strong>Add here</strong></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- REEL -->
+    <section class="section alt" id="reel">
+      <div class="container fade-in">
+        <p class="eyebrow center">Featured</p>
+        <h2 class="center">The Reel</h2>
+        <div class="video-wrap">
+          <iframe
+            src="https://www.instagram.com/reel/CAWrTuCj9p8/embed"
+            title="Alex Fish reel on Instagram"
+            loading="lazy"
+            allowfullscreen
+            scrolling="no"></iframe>
+        </div>
+        <p class="center muted small">
+          <a href="https://www.instagram.com/alex_thefish/" target="_blank" rel="noopener">Follow @alex_thefish on Instagram →</a>
+        </p>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section" id="contact">
+      <div class="container narrow fade-in">
+        <p class="eyebrow center">Inquiries</p>
+        <h2 class="center">Let's work together</h2>
+        <p class="center muted">For bookings, auditions, collaborations and representation, send a note below.</p>
+
+        <!--
+          FORM SETUP: sign up free at https://formspree.io, create a form,
+          and replace YOUR_FORM_ID below. Until then, the form falls back to opening an email.
+        -->
+        <form id="contactForm" class="form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+          <div class="row">
+            <label>Name
+              <input type="text" name="name" required />
+            </label>
+            <label>Email
+              <input type="email" name="email" required />
+            </label>
+          </div>
+          <label>Inquiry Type
+            <select name="type">
+              <option>Booking / Performance</option>
+              <option>Casting / Audition</option>
+              <option>Collaboration</option>
+              <option>Representation</option>
+              <option>Other</option>
+            </select>
+          </label>
+          <label>Message
+            <textarea name="message" rows="5" required></textarea>
+          </label>
+          <button type="submit" class="btn">Send Message</button>
+          <p class="form-status" id="formStatus" role="status"></p>
+        </form>
+
+        <p class="center muted small">
+          Or email directly: <a href="mailto:alex@example.com" id="directEmail">alex@example.com</a>
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© <span id="year"></span> Alex Fish. All rights reserved.</p>
+    <a href="https://www.instagram.com/alex_thefish/" target="_blank" rel="noopener">Instagram</a>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
